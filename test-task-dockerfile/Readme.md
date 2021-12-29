@@ -1,12 +1,10 @@
 ## Сборка
 
-`go mod download`
-
-`go build`
+`docker build -t test-app .`
 
 ## Запуск
 
-`./go-sample-app`
+`docker run -p 8080:8080 test-app`
 
 ## Примеры использования:
 
