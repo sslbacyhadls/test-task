@@ -14,6 +14,8 @@ FROM golang:latest as run
 
 WORKDIR /app
 
+EXPOSE 8080
+
 COPY --from=build /build/* .
 
 ENTRYPOINT ["/app/go-sample-app"]
